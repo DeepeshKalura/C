@@ -1,0 +1,23 @@
+/*
+    Write a program in C to check whether a letter is lowercase or not.
+*/
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char a[100];
+    gets(a);
+    for(int i = 0; i<strlen(a) ;i++)
+    {
+        if (a[i] == '\n')
+        {
+            break;
+        }
+        else
+        {
+            printf("%c", a[i]);
+        }
+    }
+    return 0;
+}
