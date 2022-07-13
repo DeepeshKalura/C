@@ -7,23 +7,19 @@
 */
 
 #include <stdio.h>
-
+typedef struct Date
+{
+    int day;
+    int month;
+    int year;
+}date;
 typedef struct students
 {
     char name[100];
     int rollnumber;
-    typedef struct birth
-    {
-        int day;
-        int mounth;
-        int year;
-    }birth;
-    typedef struct admission
-    {
-        int day;
-        int mounth;
-        int year;
-    }admission;
+    date birth;
+    date admission;
+
 }stu;
 
 int main()
